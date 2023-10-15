@@ -1,6 +1,6 @@
 # Backdoor-And-Server 💻🔗
 
-- Welcome to the Backdoor-And-Server project, a powerful yet educational server-client Python application that enables you to remotely execute commands on the server from the backdoor. 
+- Welcome to the Backdoor-And-Server project, a powerful yet educational server-client Python application that enables you to remotely execute commands from the server on the backdoor. 
 
 ## Warning 🚨
 **Please note that this project is intended for educational and research purposes only. Use it responsibly and only on devices and systems for which you have explicit authorization. The author of this project is not responsible for any misuse or illegal activities involving this software.**
