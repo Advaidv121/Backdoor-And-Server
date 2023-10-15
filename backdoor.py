@@ -150,7 +150,7 @@ def conect1():
     while True:
         time.sleep(10)
         try:
-            s.connect(('xx.xxx.xx.xx',xxxx))
+            s.connect(('xx.xxx.xx.xx',xxxx)) #add the ip and port number
             menu()
             s.close()
             break
