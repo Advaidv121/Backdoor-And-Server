@@ -28,11 +28,11 @@ Next, install the requirements using pip3 with the following instructions:
 
 For **Server.py**
 ```
-$ pip3 install pyautogui
+$ pip3 install tqdm
 ```
 For **Backdoor.py**
 ```
-$ pip3 install tqdm
+$ pip3 install pyautogui 
 ```
 
 ## Pre Execution ⏮️
