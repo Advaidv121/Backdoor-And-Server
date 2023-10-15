@@ -27,11 +27,11 @@ Next, install the requrements using pip3 with the following instructions:
 
 For **Server.py**
 ```
-$ pip3 install -r requirements.txt
+$ pip3 install -r srequirements.txt
 ```
 For **Backdoor.py**
 ```
-$ pip3 install -r requirements.txt
+$ pip3 install -r brequirements.txt
 ```
 
 ## Pre Execution ⏮️
@@ -82,6 +82,10 @@ Here's a table of the commands you can run on the server from the client:
 
 Keyloggers can be used for:
 
-- Personal Control and File Backup: Ensure no one is using your computer in your absence. 🔒💼
-- Self Analysis: Verify if your system is being accessed by someone else. 🕵️‍♂️💻
-- Malicious Intent: Spy on other systems and users (Not recommended). 👀🚫"
+-Unauthorized Access: Malicious actors use backdoors to gain unauthorized access to a computer system, network, or device. This unauthorized access can lead to data theft, surveillance, or further exploitation.
+
+-Remote Control: Backdoors provide remote control over a compromised system. Attackers can manipulate the victim's computer, executing commands and actions without the user's knowledge or consent.
+
+-Persistence: Backdoors are often used to maintain a persistent presence within a compromised network or system. This allows attackers to maintain access even if initial security flaws are patched.
+
+-Data Theft: Backdoors enable the exfiltration of sensitive data, such as personal information, financial records, or intellectual property, which can then be misused or sold.
