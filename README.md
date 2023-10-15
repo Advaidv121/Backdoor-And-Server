@@ -7,14 +7,13 @@
 
 ## Table of Contents
 
-1. [Installation](#Installation) 📥
-2. [Requirements](#pre-execution-setup)
-3. [Configure](#Configure) ⏮️
-4. [Execution](#execution) 🏃‍♂️
-5. [Commands](#Commands) 💻
-6. [Uses](#Uses) 💡
+1. [Installation Process](#installation-process) 📥
+2. [Pre-Execution Setup](#pre-execution-setup) ⏮️
+3. [Execution](#execution) 🏃‍♂️
+4. [Available Commands](#available-commands) 💻
+5. [Potential Uses](#potential-uses) 💡
 
-## Installation 📥
+## Installation Process 📥
 
 - Let's get you started with Backdoor-And-Server. First, clone the repository and navigate to the `Backdoor-And-Server` directory:
 
@@ -35,7 +34,7 @@ For **Backdoor.py**
 $ pip3 install tqdm
 ```
 
-## Configure ⏮️
+## Pre Execution ⏮️
 
 - On line number **137** of **server.py** file
 ```
@@ -58,7 +57,7 @@ python server.py
 ```
 - This will establish a connection with the server, and you can start sending commands to be executed on the server.🛜
 
-## Commands 💡
+## Available Commands 💡
 
 - Here's a table of the commands you can run on the server from the client:
 
@@ -79,7 +78,7 @@ python server.py
 
 
 
-## Uses 🌟
+## Potential Uses 🌟
 
 - Backdoor and server can be used for:
 
