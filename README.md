@@ -8,11 +8,11 @@
 ## Table of Contents
 
 1. [Installation Process](#installation-process-) 📥
-2. [Requirements](#requirements-%EF%B8%8F)
-3. [Pre-Execution Setup](#pre-execution-setup) ⏮️
-4. [Execution](#execution) 🏃‍♂️
-5. [Available Commands](#available-commands) 💻
-6. [Potential Uses](#potential-uses) 💡
+2. [Requirements](#requirements-%EF%B8%8F) 🛠️
+3. [Pre-Execution Setup](#pre-execution-%EF%B8%8F) ⏮️
+4. [Execution](#execution-%EF%B8%8F) 🏃‍♂️
+5. [Available Commands](#available-commands-) 💻
+6. [Potential Uses](#potential-uses-) 💡
 
 ## Installation Process 📥
 
