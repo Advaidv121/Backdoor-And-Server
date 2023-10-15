@@ -56,11 +56,11 @@ python backdoor.py
 ```
 python server.py
 ```
-- This will establish a connection with the server, and you can start sending commands to be executed on the server.🛜
+- This will establish a connection with the server, and you can start sending commands to be executed on the backdoor.🛜
 
 ## Available Commands 💡
 
-- Here's a table of the commands you can run on the server from the client:
+- Here's a table of the commands you can run on the backdoor from the server:
 
 | Command                | Description                                                     |
 |------------------------|-----------------------------------------------------------------|
@@ -68,15 +68,17 @@ python server.py
 | `cd <foldername>`      | Change the current directory to the specified folder.           |
 | `cd ..`                | Navigate to the parent directory.                               |
 | `pwd`                  | Print the current working directory.                            |
-| `cat`                  | Display the contents of a text file.                            |
-| `python1 <filename>`   | Execute a Python 1.x script with the specified filename.        |
+| `cat <filename>`       | Display the contents of a text file.                            |
+| `python <filename>`    | Execute a Python 1.x script with the specified filename.        |
 | `python3 <filename>`   | Execute a Python 3.x script with the specified filename.        |
 | `copy <filename>`      | Copy a file from the client to the server.                      |
 | `bye`                  | Disconnect from the server.                                     |
 | `scrst`                | Command description not provided.                               |
 | `send <filename>`      | Send a file to the server.                                      |
 | `help`                 | Display a list of available commands.                           |
-
+|`lsl`                   | List the local files and directories in the current directory.  |
+|`pwdl`                  | Print the local current working directory.                      |
+|`cdl <filename>`        | Change the local current directory to the specified folder.     |
 
 
 ## Potential Uses 🌟
